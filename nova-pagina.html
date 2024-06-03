@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimun-scale=1">
+        <title>DI-fy: Nova página</title>
+
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <img src="imagens/logo.jpg" class="nav-logo" alt="Logo diário interativo">
+            <div id="menu">
+                <a id=home-page class="nav-item">Início</a>
+                <a id="login-page" class="nav-item">Login</a>
+                <a id="new-page" class="nav-item">Nova página</a>
+                <a id="historic-page" class="nav-item">Histórico</a>
+            </div>
+        </header>
+
+        <main class="page new-page">
+            <span id="emoji" class=.draggable></span>
+            <emoji-picker id="emojiGrid" emoji-version="15.0"></emoji-picker>
+            <h2 id=titulo contenteditable>Título aqui:</h2>
+            <div id="area-image">
+                <label for="arquivo" class="botao-personalizado">Adicionar imagem</label>
+            </div>
+            <input type="file" accept="image/jpeg, image/png" id="arquivo" style="display: none;">
+            <p id=texto contenteditable>Escreva um pouco sobre seu dia, viagens, amigos ou pensamentos...</p>
+            <div id=opcoes>
+                <button class="botao-personalizado">Salvar</button>
+                <button class="botao-personalizado">Baixar</button>
+            </div>
+        </main>
+
+        <footer>
+            <div>
+                <img src="imagens/logo.jpg">
+                <p>DI-fy: Diário Interativo</p>
+                <p>Copyright © 2024</p>
+            </div>
+            <a id=about class="rodape-item">Sobre nós</a>
+            <a id=contact class="rodape-item">Contato</a>
+            <a id=help class="rodape-item">Ajuda</a>
+        </footer>
+        <script type="module" src="https://cdn.jsdelivr.net/npm/emoji-picker-element@^1/index.js"></script>
+
+        <script type=module src="js/index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+.new-page {
+    padding: 5rem 0px;
+    height: auto;
+    gap: 20px;
+}
+.new-page {
+    #emoji {
+        width: 100px;
+        font-size: 400%;
+    }
+    #titulo {
+        padding: 4px;
+        max-height: 40px;
+    }
+    #titulo, #texto {
+        border: solid black 1px;
+        min-width: 100px;
+        max-width: 80%;
+        overflow: auto;
+    }
+    #texto {
+        height: 400px;
+        padding: 1%;
+    }
+    .botao-personalizado {
+        padding: 5px 10px;
+        background-color: #f0f0f0;
+        border: 0.1px solid #ccc;
+        color: #333;
+        font-size: 18px;
+        transition: background-color 0.3s ease;
+    }
+    .botao-personalizado:hover {
+        background-color: rgb(212, 212, 212);
+    }
+}
