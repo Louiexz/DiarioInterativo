@@ -1,19 +1,12 @@
 .page {
-    height: 10vh;
-    padding: 18rem 0vh;
+    min-height: 100vh;
+    padding: 10rem 0vh;
     flex-direction: column;
     text-align: center;
     justify-content: center;
 }
-#introducao {
-
-}
-#intrucoes {
-
-}
-#instrucoes-img {
-
-}
-#despedida {
-
+.resumo {
+    p, h2 {
+        padding: 8px;
+    }
 }

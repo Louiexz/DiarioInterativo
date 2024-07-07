@@ -1,0 +1,9 @@
+@media print {
+    footer, emoji-picker, #file-text, button {
+        display: none;
+    }
+    .page {
+        padding: 2rem 0vh;
+    }
+    
+}

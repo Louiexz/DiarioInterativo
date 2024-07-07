@@ -10,17 +10,24 @@
     }
     #titulo {
         padding: 4px;
-        max-height: 40px;
+        font-size: 24px;
+        max-height: 35px;
+        text-align: center;
     }
     #titulo, #texto {
         border: solid black 1px;
+        min-height: 34px;
         min-width: 100px;
-        max-width: 80%;
-        overflow: auto;
+        max-width: 90vw;
+        color: white;
+        background-color: transparent;
     }
     #texto {
-        height: 400px;
+        font-size: 20px;
         padding: 1%;
+        height: 400px;
+        max-height: 100vh;
+        text-align: justify;
     }
     .botao-personalizado {
         padding: 5px 10px;

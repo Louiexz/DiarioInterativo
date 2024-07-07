@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, minimun-scale=1">
-        <title>DI-fy: Ajuda</title>
+        <title>DI-fy: Nova página</title>
 
         <link rel="stylesheet" href="css/style.css">
     </head>
@@ -17,10 +17,22 @@
                 <a id="historic-page" class="nav-item">Histórico</a>
             </div>
         </header>
-        
-        <main class="page help">
-            <h1>Ajuda</h1>
+
+        <main class="page new-page">
+            <div id="emoji-box"><span id="emoji" class=.draggable></span></div>
+            <emoji-picker id="emojiGrid" emoji-version="15.0"></emoji-picker>
+            <textarea id=titulo>Título aqui:</textarea>
+            <div id="area-image">
+                <label id="file-text" for="arquivo" class="botao-personalizado">Adicionar imagem</label>
+            </div>
+            <input type="file" accept="image/jpeg, image/png" id="arquivo" style="display: none;">
+            <textarea id=texto>Escreva um pouco sobre seu dia, viagens, amigos ou pensamentos...</textarea>
+            <div id=opcoes>
+                <button class="botao-personalizado">Salvar</button>
+                <button id=baixar class="botao-personalizado">Baixar</button>
+            </div>
         </main>
+
         <footer>
             <div>
                 <img src="imagens/logo.jpg">
@@ -31,6 +43,9 @@
             <a id=contact class="rodape-item">Contato</a>
             <a id=help class="rodape-item">Ajuda</a>
         </footer>
-        <script type=module src="js/index.js"></script>
+        <script type="module" src="https://cdn.jsdelivr.net/npm/emoji-picker-element@^1/index.js"></script>
+
+        <script type=module src="js/main.js"></script>
+        <script type=module src="../js/index.js"></script>
     </body>
 </html>
