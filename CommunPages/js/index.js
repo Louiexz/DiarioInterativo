@@ -3,9 +3,6 @@ import { LinksFuncts } from './components/links.js';
 const links = new LinksFuncts();
 links.allLinks();
 
-document.querySelector('#home-page').style.color = 'green';
-links.addClick("#create-page", "PageNew/nova-pagina")
-
 if (window.innerWidth <= 600) {
     document.querySelector('header').classList.add('mobile-header');
 } else {

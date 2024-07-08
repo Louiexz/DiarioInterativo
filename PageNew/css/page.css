@@ -1,9 +1,6 @@
 .new-page {
-    padding: 5rem 0px;
-    height: auto;
     gap: 20px;
-}
-.new-page {
+
     #emoji {
         width: 100px;
         font-size: 400%;
@@ -17,7 +14,7 @@
     #titulo, #texto {
         border: solid black 1px;
         min-height: 34px;
-        min-width: 100px;
+        min-width: 40vw;
         max-width: 90vw;
         color: white;
         background-color: transparent;

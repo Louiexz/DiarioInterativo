@@ -1,1 +1,0 @@
-document.querySelector('.historic').innerHTML = "<h2>Sem páginas.</h2>"
