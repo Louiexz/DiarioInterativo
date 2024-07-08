@@ -37,8 +37,8 @@ export class LinksFuncts {
     allLinks() {
         this.navLinks();
         if (window.location.href.includes('login')) {
-            links.addClick("#cadastro", "PageRegister/registro")
-            links.addClick("#entrar", "index")
+            this.addClick("#cadastro", "PageRegister/registro")
+            this.addClick("#entrar", "index")
         };
         this.footerLinks();
         this.linkActive();
