@@ -41,9 +41,9 @@ textarea {
 textarea {
     padding: 4px;
     border: solid black 1px;
-    min-height: 34px;
-    min-width: 40vw;
-    max-width: 90vw;
+    min-width: 90dvw;             /* Largura ajustável à viewport dinâmica */
+    min-height: 5rem;  /* Altura mínima do conteúdo */
+    padding: 10px;
     background-color: transparent;
     color: black;
     text-align: center;
@@ -59,6 +59,6 @@ textarea {
     }
     #texto {
         height: auto; /* Allow text area to grow */
-        max-height: 70vh; /* Adjust max height for smaller screens */
+        max-height: 80vh; /* Adjust max height for smaller screens */
     }
 }

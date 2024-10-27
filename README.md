@@ -22,7 +22,7 @@ O DI-FY é um website para criação de páginas de diário, permitindo que os n
 ## Instalação e Uso
 1. Acesse no navegador:
 
-    https://di-fy.vercel.app/
+    https://diario-interativo.vercel.app
 
 2. Ou garanta que estejam instaladas as seguintes ferramentas:
 

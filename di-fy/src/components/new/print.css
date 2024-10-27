@@ -3,6 +3,12 @@
     .color, label, header, .obs, .mobile-header, h1 {
         display: none;
     }
+    #emoji {
+        font-size: 70px;
+    }
+    img {
+        max-width: 90%;
+    }
     #text, #title {
         border: none;
         overflow: none;
