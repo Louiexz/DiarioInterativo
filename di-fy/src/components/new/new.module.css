@@ -1,0 +1,64 @@
+.new-page {
+    display: flex; /* Ensure flex properties are applied */
+    gap: 20px;
+    align-items: center;
+}
+label {
+    text-align: center;   
+}
+emoji-picke {
+    z-index: 1;
+}
+#emoji {
+    width: 100px !important;
+    font-size: 400%;
+}
+input[type=color], textarea, button {
+    max-width: 50vw;
+}
+input[type=file] {
+    display: none;
+}
+#area-image {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    img {
+        width: 20vw;
+        object-fit: contain;
+        aspect-ratio: 1/1;
+    }
+}
+#title {
+    max-height: 35px;
+    text-align: center;
+    margin-bottom: 10px; /* Space below the title */
+}
+textarea {
+    font-size: 1.5vw;
+}
+textarea {
+    padding: 4px;
+    border: solid black 1px;
+    min-height: 34px;
+    min-width: 40vw;
+    max-width: 90vw;
+    background-color: transparent;
+    color: black;
+    text-align: center;
+}
+.opcoes {
+    display: flex;
+    gap: 20px
+}
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    #titulo {
+        max-height: none; /* Remove max height */
+    }
+    #texto {
+        height: auto; /* Allow text area to grow */
+        max-height: 70vh; /* Adjust max height for smaller screens */
+    }
+}

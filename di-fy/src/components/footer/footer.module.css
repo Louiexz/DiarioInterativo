@@ -1,0 +1,10 @@
+footer {
+    font-size: max(85%, 1.4vw);
+    padding: 20px;
+    text-align: center; /* Centers text */
+}
+.logo {
+    width: clamp(5rem, 8rem, 10rem);
+    height: auto; /* Maintain aspect ratio */
+    align-self: center; /* Center vertically */
+}

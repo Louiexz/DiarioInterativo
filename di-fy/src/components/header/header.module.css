@@ -1,0 +1,14 @@
+header {
+  display: flex; /* Ensure flex layout is applied */
+  flex-direction: row;
+  position: fixed;
+  z-index: 99;
+  font-size: 1.8vw;
+  gap: 5px
+}
+
+.logo {
+  width: clamp(5rem, 8rem, 10rem);
+  height: auto; /* Maintain aspect ratio */
+  align-self: center; /* Center vertically */
+}

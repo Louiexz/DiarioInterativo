@@ -1,0 +1,18 @@
+button, label {
+    padding: 10px 20px;
+    background-color: #FF6F61; /* Coral vibrante */
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF; /* Texto branco */
+    transition: background-color 0.3s ease, transform 0.2s; /* Transição suave */
+}
+
+button:hover, .btn:hover {
+    background-color: #FF4C40; /* Cor de hover mais escura */
+    transform: translateY(-2px); /* Leve efeito de elevação */
+}
+
+button:focus, .btn:focus {
+    outline: none; /* Remove outline padrão */
+    box-shadow: 0 0 5px rgba(255, 100, 100, 0.5); /* Sombra ao focar */
+}

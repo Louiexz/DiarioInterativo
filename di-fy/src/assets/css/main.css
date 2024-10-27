@@ -1,0 +1,41 @@
+.page {
+    display: flex; /* Ensure flex properties work */
+    min-height: 100dvh;
+    max-width: 100%;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 7rem 2rem;
+    gap: 20px;
+    background-color: #FFFFFF; /* Fundo branco */
+}
+h1, h2, h3 {
+    color: #4A90E2; /* Títulos em azul primário */
+}
+#img-exemplo {
+    max-width: 100%;
+    border: 1px solid black
+}
+p {
+    margin-bottom: 15px; /* Espaçamento entre parágrafos */
+}
+.resumo p,
+.resumo h2 {
+    padding: 8px;
+}
+
+.resumo p {
+    margin: 10px 0; /* Vertical margin for paragraphs */
+}
+
+.resumo h2 {
+    margin: 15px 0; /* Vertical margin for headers */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .page {
+        padding: 8rem 0; /* Adjust padding for smaller screens */
+    }
+}

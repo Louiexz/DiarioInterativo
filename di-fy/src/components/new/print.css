@@ -1,0 +1,17 @@
+@media print {
+    footer, emoji-picker, #file-text, button,
+    .color, label, header, .obs, .mobile-header, h1 {
+        display: none;
+    }
+    #text, #title {
+        border: none;
+        overflow: none;
+    }
+    .page {
+        padding: 2rem 0vh;
+        break-inside: avoid;
+    }
+    .print-only {
+        display: block;
+    }
+}
