@@ -98,7 +98,7 @@ function New() {
                     Cor do texto
                 </label>
                 <div className={style.opcoes}>
-                    <Button text="Salvar" />
+                    <Button text="Salvar" deactived={true}/>
                     <Button text="Baixar" id="baixar" event="onClick" funct={handlePrint} />
                 </div>
             </main>

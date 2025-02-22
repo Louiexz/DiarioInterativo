@@ -6,8 +6,9 @@
 label {
     text-align: center;   
 }
-emoji-picke {
+emoji-picker {
     z-index: 1;
+    aspect-ratio: 6/12
 }
 #emoji {
     width: 100px !important;
@@ -24,11 +25,10 @@ input[type=file] {
     flex-direction: row;
     align-items: center;
     gap: 10px;
-    img {
-        width: 20vw;
-        object-fit: contain;
-        aspect-ratio: 1/1;
-    }
+}
+img {
+    max-width: 85%;
+    max-height: 100%;
 }
 #title {
     max-height: 35px;
@@ -54,11 +54,14 @@ textarea {
 }
 /* Media query for responsiveness */
 @media (max-width: 768px) {
-    #titulo {
-        max-height: none; /* Remove max height */
+    textarea {
+        font-size: 20px;
     }
-    #texto {
+    #title {
+        max-height: 30px; /* Remove max height */
+    }
+    #text {
         height: auto; /* Allow text area to grow */
-        max-height: 80vh; /* Adjust max height for smaller screens */
+        max-height: 80dvh; /* Adjust max height for smaller screens */
     }
 }

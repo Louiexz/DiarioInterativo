@@ -18,7 +18,7 @@ function Button(props) {
     const eventHandler = props.event ? { [props.event]: props.funct } : {};
 
     return (
-        <button id={props.id} {...eventHandler} onLoad={() => linkActive()}>
+        <button id={props.id} {...eventHandler} onLoad={() => linkActive()} aria-deactived={props.deactived}>
             <span id="active-link">{props.text}</span>
         </button>
     );
@@ -30,6 +30,7 @@ Button.propTypes = {
     event: PropTypes.string, // The type of event handler (e.g., 'onClick')
     class: PropTypes.string, // Class style of the button
     funct: PropTypes.func,   // The event handler function
+    deactived: PropTypes.bool,   // The event handler function
 };
 
 export default Button;

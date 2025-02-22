@@ -12,8 +12,8 @@ function Footer(props) {
                         <p>Copyright © 2024</p>
                 </div>
                 <a id="contact" className="rodape-item">Contato</a>
-                <Button text="About" className="nav-item"/>
-                <Button text="Faq" className="nav-item"/>
+                <Button text="About" deactived={true}/>
+                <Button text="Faq" deactived={true}/>
             </footer>
         </>
     )

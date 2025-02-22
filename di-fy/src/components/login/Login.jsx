@@ -1,4 +1,5 @@
 import "./login.module.css"
+import Button from "../button/Button";
 
 function Login() {
     return (
@@ -17,9 +18,9 @@ function Login() {
                     </div>
                     <input type="password"/>
                 </div>
-                <a id="entrar"><button type="button" className="btn btn-success">Entrar</button></a>
-                <a id="recuperar"><button type="button" className="btn btn-link">Esqueceu sua senha?</button></a>
-                <a id="cadastro"><button type="button" className="btn btn-link">Registre-se</button></a>
+                <Button id="entrar" text="Entrar" deactived={true}/>
+                <Button id="recuperar" text="Esqueceu sua senha?" deactived={true}/>
+                <Button id="cadastro" text="Registre-se" deactived={true}/>
             </main>
         </>
     )

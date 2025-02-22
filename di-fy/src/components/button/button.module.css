@@ -16,3 +16,7 @@ button:focus, .btn:focus {
     outline: none; /* Remove outline padrão */
     box-shadow: 0 0 5px rgba(255, 100, 100, 0.5); /* Sombra ao focar */
 }
+button[aria-deactived=true], button[aria-deactived=true]:hover {
+    transform: none;
+    cursor: not-allowed;
+}

@@ -10,6 +10,7 @@ import Historic from './../Historic'
 
 function Header(props) {
     const [activeComponent, setActiveComponent] = useState('Home'); // Exibe Home por padrão
+    const user = false;
 
     function handleButtonClick(component) {
         if (activeComponent !== component) {
@@ -24,7 +25,7 @@ function Header(props) {
                     <Button text="Home" className={style.item} event="onClick" funct={() => handleButtonClick('Home')}/>
                     <Button text="Login" className={style.item} event="onClick" funct={() => handleButtonClick('Login')}/>
                     <Button text="New page" className={style.item} event="onClick" funct={() => handleButtonClick('New')}/>
-                    <Button text="History pages" className={style.item} event="onClick" funct={() => handleButtonClick('Historic')}/>
+                    { user &&  <Button text="History pages" className={style.item} event="onClick" funct={() => handleButtonClick('Historic')}/> }
                 </div>
             </header>
             {activeComponent === 'Home' && <Home />}

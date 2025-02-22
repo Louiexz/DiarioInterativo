@@ -3,9 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
-    min-height: 100vh;
+    min-height: 100dvh;
     background: linear-gradient(225deg, #F5F5F5, #D8E3E7);
     color: #333333;
     font-family: 'Arial', sans-serif;
@@ -13,14 +12,14 @@ body {
     font-size: clamp(1.3vw, 1.5vw, 2vw);
 }
 header, footer {
-    max-height: 110px;
+    max-height: 10%;
     background-color: #4A90E2;
     color: #FFFFFF;
     display: flex;
     justify-content: space-around;
     align-items: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 100vw;
+    width: 98.9dvw;
 }
 button, label {
     padding: 10px 20px;
